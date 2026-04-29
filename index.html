@@ -1010,6 +1010,7 @@
     <li><a href="#overview">Overview</a></li>
     <li><a href="#components">Components</a></li>
     <li><a href="#hardware">Hardware</a></li>
+    <li><a href="#demo">Demo</a></li>
     <li><a href="#code">Code</a></li>
     <li><a href="#team">Team</a></li>
     <li><a href="#cost">Cost</a></li>
@@ -1039,14 +1040,18 @@
         <div class="team-avatar-mini">👩</div>
       </div>
       <div class="team-names">
-        <strong>Ashlesha Wagh · Snehal Kolte · Kaveri Uphade</strong><br>
+        <strong>Snehal Kolte · Ashlesha Wagh · Kaveri Uphade</strong><br>
         BE Engineering, Batch 2024–25
       </div>
     </div>
 
     <div class="hero-ctas">
       <a href="#hardware" class="btn btn-fire">🔬 View Hardware</a>
+      <a href="#demo" class="btn btn-ghost">▶ Watch Demo</a>
       <a href="#code" class="btn btn-ghost">&lt;/&gt; See Code</a>
+    </div>
+    <div style="margin-top:16px; font-family:'JetBrains Mono',monospace; font-size:0.7rem; color:var(--muted); animation: slideIn 0.7s 0.35s ease both;">
+      💡 Inspired by <a href="https://youtu.be/NyUJvcocJpA?si=ba_hFPxdhfMz9RIi" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(255,140,0,0.3);">this YouTube build ↗</a>
     </div>
   </div>
 
@@ -1078,7 +1083,7 @@
 
 <!-- STATS STRIP -->
 <div class="stats-strip">
-  <div class="stat-cell"><span class="stat-val">₹5.3K</span><span class="stat-key">Min. Build Cost</span></div>
+  <div class="stat-cell"><span class="stat-val">₹15K</span><span class="stat-key">Build Cost</span></div>
   <div class="stat-cell"><span class="stat-val">250mW</span><span class="stat-key">Laser Power</span></div>
   <div class="stat-cell"><span class="stat-val">1/16</span><span class="stat-key">Micro-step Mode</span></div>
   <div class="stat-cell"><span class="stat-val">4+</span><span class="stat-key">Materials Tested</span></div>
@@ -1421,6 +1426,38 @@
   <p style="text-align:center; margin-top:20px; font-family:'JetBrains Mono',monospace; font-size:0.72rem; color:var(--muted);">✓ Literature Survey completed with circuit diagrams & expected outputs analysis — 14 papers reviewed (2020–2025)</p>
 </section>
 
+<!-- DEMO VIDEO -->
+<section id="demo">
+  <div class="sec-label">06.5 — Live Demo</div>
+  <h2 class="sec-title reveal">See It <em>In Action</em></h2>
+  <div class="reveal" style="max-width: 860px; margin: 0 auto;">
+    <div style="background:var(--surface); border:1px solid var(--border2); border-radius:6px; overflow:hidden; position:relative;">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent2),var(--accent),var(--accent3));"></div>
+      <div style="padding: 20px 24px 8px; display:flex; align-items:center; gap:10px;">
+        <div class="laser-dot"></div>
+        <span style="font-family:'JetBrains Mono',monospace; font-size:0.72rem; color:var(--accent); letter-spacing:0.1em;">WORKING PROTOTYPE — LIVE ENGRAVING SESSION</span>
+      </div>
+      <video
+        controls
+        style="width:100%; display:block; max-height:500px; background:#000;"
+        poster=""
+      >
+        <source src="demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div style="padding:16px 24px; display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--border);">
+        <span style="font-size:0.8rem; color:var(--muted);">Arduino UNO · GRBL Firmware · LaserGRBL · TB6600 Drivers</span>
+        <span style="font-family:'JetBrains Mono',monospace; font-size:0.68rem; color:var(--accent);">250mW · 650nm</span>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:20px; font-family:'JetBrains Mono',monospace; font-size:0.72rem; color:var(--muted);">
+      💡 Build inspired by <a href="https://youtu.be/NyUJvcocJpA?si=ba_hFPxdhfMz9RIi" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(255,140,0,0.3);">this YouTube video ↗</a> — adapted and extended for our final year BE project.
+    </p>
+  </div>
+</section>
+
+<hr class="sec-divider">
+
 <!-- COST -->
 <section id="cost">
   <div class="sec-label">07 — Cost Estimation</div>
@@ -1442,7 +1479,7 @@
         <tr><td>Mechanical Structure (Acrylic / Aluminium)</td><td>₹1,500 – ₹3,000</td></tr>
         <tr><td>Miscellaneous (wires, PCB, resistors, caps)</td><td>₹500 – ₹1,000</td></tr>
         <tr><td>LaserGRBL Software</td><td>₹0 (Open-Source)</td></tr>
-        <tr class="total-row"><td>Estimated Total</td><td>₹5,300 – ₹11,100</td></tr>
+        <tr class="total-row"><td>Estimated Total</td><td>₹15,000</td></tr>
       </tbody>
     </table>
   </div>
@@ -1456,16 +1493,16 @@
   <h2 class="sec-title reveal">The <em>Builders</em></h2>
   <div class="team-grid reveal">
     <div class="team-card lead">
+      <div class="team-avatar">👩‍🔬</div>
+      <div class="team-name">Snehal Kolte</div>
+      <div class="team-role">Project Lead · Firmware & Testing</div>
+      <p class="team-dept">Final Year BE — Electronics &amp; Telecommunication<br>GRBL firmware, Arduino code, motor calibration &amp; engraving trials.</p>
+    </div>
+    <div class="team-card">
       <div class="team-avatar">👩‍💻</div>
       <div class="team-name">Ashlesha Wagh</div>
       <div class="team-role">Hardware & Integration</div>
       <p class="team-dept">Final Year BE — Electronics &amp; Telecommunication<br>System design, hardware assembly, and project coordination.</p>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar">👩‍🔬</div>
-      <div class="team-name">Snehal Kolte</div>
-      <div class="team-role">Firmware & Testing</div>
-      <p class="team-dept">Final Year BE — Electronics &amp; Telecommunication<br>GRBL firmware, Arduino code, motor calibration &amp; engraving trials.</p>
     </div>
     <div class="team-card">
       <div class="team-avatar">👩‍🎓</div>
